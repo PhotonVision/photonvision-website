@@ -1545,7 +1545,7 @@
 /* Basic */
 
     html, body {
-        background: #16143a;
+        background: #78787e;
     }
 
     body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2772,14 +2772,28 @@
         input[type="reset"].special,
         input[type="button"].special,
         .button.special {
-            background-color: #2616b3;
+            background-color: #006492;
             box-shadow: none;
             color: #ffffff !important;
         }
 
+            input[type="submit"].special:hover,
+            input[type="reset"].special:hover,
+            input[type="button"].special:hover,
+            .button.special:hover {
+                background-color: #39A4D5;
+            }
+
+            input[type="submit"].special:active,
+            input[type="reset"].special:active,
+            input[type="button"].special:active,
+            .button.special:active {
+                background-color: #e13652;
+            }
+
         .special_red
         {
-            background-color: #d72c43;
+            background-color: #39A4D5;
             box-shadow: none;
             color: #ffffff !important;
 
@@ -2792,7 +2806,7 @@
         }
         .special_red:hover
         {
-            background-color: #2616b3;
+            background-color: #006492;
             color: #ffffff !important;
         }
 
@@ -2800,20 +2814,6 @@
         {
             background-color: rgb(19, 36, 131);
         }
-            input[type="submit"].special:hover,
-            input[type="reset"].special:hover,
-            input[type="button"].special:hover,
-            .button.special:hover {
-                background-color: #e76278;
-            }
-
-            input[type="submit"].special:active,
-            input[type="reset"].special:active,
-            input[type="button"].special:active,
-            .button.special:active {
-                background-color: #e13652;
-            }
-
         input[type="submit"].disabled, input[type="submit"]:disabled,
         input[type="reset"].disabled,
         input[type="reset"]:disabled,

@@ -2791,9 +2791,9 @@
                 background-color: #e13652;
             }
 
-        .special_red
+        .special_box
         {
-            background-color: #39A4D5;
+            background-color: #006492;
             box-shadow: none;
             color: #ffffff !important;
 
@@ -2804,13 +2804,13 @@
             -webkit-transition: background-color .2s ease-in; 
             transition: background-color .2s ease-in; 
         }
-        .special_red:hover
+        .special_box:hover
         {
-            background-color: #006492;
+            background-color: #39A4D5;
             color: #ffffff !important;
         }
 
-        .special_red:active 
+        .special_box:active 
         {
             background-color: rgb(19, 36, 131);
         }

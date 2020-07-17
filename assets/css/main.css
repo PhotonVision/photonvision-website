@@ -2775,6 +2775,7 @@
             background-color: #006492;
             box-shadow: none;
             color: #ffffff !important;
+            padding: 0em 2.25em;
         }
 
             input[type="submit"].special:hover,
@@ -2860,6 +2861,38 @@
             width: 2em;
             z-index: 1;
         }
+
+    .goto-next_content {
+        border: 0;
+        bottom: 0;
+        display: block;
+        height: 10em;
+        left: 50%;
+        margin: 0 0 0 -5em;
+        overflow: hidden;
+        position: absolute;
+        text-indent: 10em;
+        white-space: nowrap;
+        width: 10em;
+        z-index: 1;
+    }
+
+        .goto-next_content:before {
+            background-image: url("images/arrow.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+            display: block;
+            height: 1.5em;
+            left: 50%;
+            margin: -0.75em 0 0 -1em;
+            position: absolute;
+            top: 50%;
+            width: 2em;
+            z-index: 1;
+        }
+
 
 /* Spotlight */
 

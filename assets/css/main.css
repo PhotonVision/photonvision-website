@@ -2506,6 +2506,22 @@
             padding-left: 0.25em;
         }
 
+    nl {
+        -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        border-bottom: none; 
+        color: #e44c65;
+        text-decoration: none;
+        padding-left: 2em;
+    }
+
+    nl:hover {
+        color: #e44c65 !important;
+        border-bottom-color: transparent;
+    }
+
     ul {
         list-style: disc;
         margin: 0 0 2em 0;
@@ -3266,6 +3282,7 @@
 
     #page-wrapper {
         padding-top: 3.5em;
+        padding-bottom: 0em;
     }
 
     #header {

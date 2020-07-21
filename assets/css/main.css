@@ -2014,7 +2014,7 @@
         body.landing:before {
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
-            font-family: FontAwesome;
+            font-family: "Font Awesome 5 Free";
             font-style: normal;
             font-weight: normal;
             text-transform: none !important;
@@ -2202,7 +2202,7 @@
         .select-wrapper:before {
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
-            font-family: FontAwesome;
+            font-family: "Font Awesome 5 Free";
             font-style: normal;
             font-weight: normal;
             text-transform: none !important;
@@ -2277,7 +2277,7 @@
             input[type="radio"] + label:before {
                 -moz-osx-font-smoothing: grayscale;
                 -webkit-font-smoothing: antialiased;
-                font-family: FontAwesome;
+                font-family: "Font Awesome 5 Free";
                 font-style: normal;
                 font-weight: normal;
                 text-transform: none !important;
@@ -2372,36 +2372,17 @@
         position: relative;
     }
 
-        .icon:before {
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            font-family: FontAwesome;
+        .icon::before {
+            display: inline-block;
             font-style: normal;
-            font-weight: normal;
-            text-transform: none !important;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
         }
 
         .icon > .label {
             display: none;
         }
-
-        .icon.alt {
-            text-decoration: none;
-        }
-
-            .icon.alt:before {
-                -moz-osx-font-smoothing: grayscale;
-                -webkit-font-smoothing: antialiased;
-                font-family: FontAwesome;
-                font-style: normal;
-                font-weight: normal;
-                text-transform: none !important;
-            }
-
-            .icon.alt:before {
-                color: #1c1d26 !important;
-                text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
-            }
 
         .icon.major {
             background: #272833;
@@ -2418,24 +2399,6 @@
             .icon.major:before {
                 font-size: 2.25em;
             }
-
-            .icon.major.alt {
-                text-decoration: none;
-            }
-
-                .icon.major.alt:before {
-                    -moz-osx-font-smoothing: grayscale;
-                    -webkit-font-smoothing: antialiased;
-                    font-family: FontAwesome;
-                    font-style: normal;
-                    font-weight: normal;
-                    text-transform: none !important;
-                }
-
-                .icon.major.alt:before {
-                    color: #ffffff !important;
-                    text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
-                }
 
 /* Image */
 
@@ -3447,25 +3410,6 @@
         padding: 2.5em 0;
         text-align: center;
     }
-
-        #footer .icons .icon.alt {
-            text-decoration: none;
-        }
-
-            #footer .icons .icon.alt:before {
-                -moz-osx-font-smoothing: grayscale;
-                -webkit-font-smoothing: antialiased;
-                font-family: FontAwesome;
-                font-style: normal;
-                font-weight: normal;
-                text-transform: none !important;
-            }
-
-            #footer .icons .icon.alt:before {
-                color: #272833 !important;
-                text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
-            }
-
         #footer .copyright {
             color: rgba(255, 255, 255, 0.5);
             font-size: 0.8em;
@@ -3813,9 +3757,10 @@
                     #titleBar .toggle:before {
                         -moz-osx-font-smoothing: grayscale;
                         -webkit-font-smoothing: antialiased;
-                        font-family: FontAwesome;
+                        font-family: "Font Awesome 5 Free";
                         font-style: normal;
-                        font-weight: normal;
+                        /* Necessary for font awesome solid style */
+                        font-weight: 900;
                         text-transform: none !important;
                     }
 

@@ -1,0 +1,25 @@
+name: Documentation
+
+on:
+  push:
+    # For now, run on all commits to master
+    branches: [ master ]
+    # and also all tags starting with v
+    tags:
+      - 'v*'
+
+jobs:
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v4
+        - name: copy file via ssh password
+          uses: appleboy/scp-action@v0.1.7
+          with:
+            host: ${{ secrets.SSH_HOST }}
+            username: ${{ secrets.SSH_USERNAME }}
+            password: ${{ secrets.SSH_KEY }}
+            port: ${{ secrets.SSH_PORT }}
+            source: "*"
+            target: /var/www/html/photonvision-website/

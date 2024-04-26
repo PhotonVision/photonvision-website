@@ -23,15 +23,14 @@
         <div id="page-wrapper">
             <!-- Header -->
                 <header id="header">
-                    <!--p id="logo"><a href="index.html"><img src="images/Logos/Header/PNG/PhotonVision-Header-noBG.png"height="65"></a></h1--> 
-                    <h1 id="logo"><a href="index.html"></a></h1> <!-- TODO: Make this go from invisible to the logo when the landing page is scrolled past.--> 
+                    <h1 id="logo"><a href="index.html"></a></h1> 
                     <nav id="nav">
                         <ul>
                             <!--<li><a href="index.html">Home</a></li>-->
                             <li><a href="https://docs.photonvision.org/en/latest/">Documentation</a></li>
                             <li><a href="https://discord.gg/wYxTwym">Discord</a></li>
                             <li><a href="https://github.com/PhotonVision/photonvision/">GitHub</a></li>
-                <li><a href="https://my-store-cec24b.creator-spring.com/">Merch</a></li>
+                            <li><a href="https://my-store-cec24b.creator-spring.com/">Merch</a></li>
                             <li><a href="https://demo.photonvision.org" class="special_box">Demo</a></li>
                         </ul>
                     </nav>
@@ -47,19 +46,19 @@
                             Raspberry Pi image and start tracking targets in minutes.</p>
                             <p><a href="downloads.html" class="button special">Download</a></p>
                         </header>
-                        <span class="image"><img src="images/Logos\Icon\PNG\PhotonVision-Icon-noBG.png" alt="" /></span>
+                        <span class="image"><img src="images/PhotonVision-Icon-BG.png" alt="" /></span>
                     </div>
                     <a href="#two" class="goto-next_content scrolly">Next</a>
                 </section>
 
             <!-- Two -->
             <section id="two" class="spotlight style2 right">
-                <span class="image fit"><img src="images/PV_menu_home.png" alt="" /></span>
+                <span class="image fit"><img src="images/demo.png" alt="" /></span>
                 <a href="#three" class="goto-next scrolly">Next</a>
             </section>
 
             <!-- Three -->
-            <section id="three" class="wrapper style1 special fade-up">
+            <section id="three" class="wrapper style1">
                 <div class="container">
                     <header class="major">
                         <h2>The Future is in Sight</h2>
@@ -69,19 +68,19 @@
                     <div class="box alt">
                         <div class="row uniform">
                             <section class="4u 6u$(medium) 12u$(xsmall)">
-                                <i class="icon alt major fas fa-crosshairs"></i>
-                                <h3>Precise Target Recognition</h3>
-                                <p>Identifies and locks on to up to 5 individual targets</p>
+                                <i class="icon alt major fas fa-location-arrow"></i>
+                                <h3>First-Class AprilTag Support</h3>
+                                <p>FRC Target tracking, out of the box.</p>
                             </section>
                             <section class="4u 6u$(medium) 12u$(xsmall)">
-                                <i class="icon alt major fas fa-cube"></i>
-                                <h3>User-Calibratable SolvePnP</h3>
-                                <p>Per-camera instrinsics calibration maximizes accuracy of SolvePNP</p>
+                                <i class="icon alt major fas fa-chess-board"></i>
+                                <h3>Built-In Camera Calibration</h3>
+                                <p>Per-camera intrinsics calibration maximizes accuracy of homography</p>
                             </section>
                             <section class="4u$ 6u$(medium) 12u$(xsmall)">
-                                <i class="icon alt major fas fa-lightbulb"></i>
-                                <h3>Fine Camera Adjustment</h3>
-                                <p>Ensures consistency by minimizing light interference</p>
+                                <i class="icon alt major fas fa-brain"></i>
+                                <h3>Machine Learning</h3>
+                                <p>Hardware-accelerated inferencing for gamepiece detection</p>
                             </section>
                             <section class="4u 6u(medium) 12u$(xsmall)">
                                 <i class="icon alt major fas fa-eye"></i>
@@ -94,9 +93,9 @@
                                 <p>PhotonVision can run as many cameras as your hardware can handle</p>
                             </section>
                             <section class="4u$ 6u$(medium) 12u$(xsmall)">
-                                <i class="icon alt major fas fa-microchip"></i>
-                                <h3>LED Control</h3>
-                                <p>Toggle, blink, and adjust brightness of your custom LEDs</p>
+                                <i class="icon alt major fas fa-layer-group"></i>
+                                <h3>Multi-Tag Pose Estimation</h3>
+                                <p>Fuse all your available data for peak robot performance</p>
                             </section>
                         </div>
                     </div>
@@ -104,30 +103,15 @@
             </section>
 
             <!-- Four -->
-            <section id="four" class="spotlight style3 left">
-                <span class="image fit"><img src="images/demo.png" alt="" /></span>
-                <a href="#five" class="goto-next scrolly">Next</a>
+            <section id="four" class="spotlight wrapper style1 special fade-up">
+                <span class="image fit"><img src="images/in-action.gif" alt="" /></span>
+                <a href="#seven" class="goto-next scrolly">Next</a>
             </section>
 
 
             <!-- Five -->
-            <section id="five" class="wrapper style1 special fade-up">
-                    <div class="container">
-                        <header class="major">
-                            <h2>Gloworm Support</h2>
-                            <p>Natively Supported on <a href="https://gloworm.vision/">Gloworm</a>, an inexpensive, preassembled hardware solution for vision in FRC.</p>
-                        </header>
-                        <div class="box alt">
-                        </div>
-                    </div>
-                <a href="#six" class="goto-next scrolly">Next</a>
-                </section>
 
             <!-- Six -->
-            <section id="six" class="spotlight style3 left">
-                <span class="image fit top"><img src="images/gloworm_less.jpg" alt="" /></span>
-                <a href="#seven" class="goto-next scrolly">Next</a>
-            </section>
 
             <!-- Seven -->
             <section id="seven" class="wrapper style1 special fade-up">
@@ -147,7 +131,7 @@
             </section>
 
             <!-- Eight -->
-            <section id="eight" class="wrapper style1 special fade-up">
+            <section id="eight" class="spotlight style1 special fade-up">
                     <div class="container">
                     <header class="major">
                         <h2>FOSS</h2>
@@ -181,7 +165,7 @@
             </section>
             <!-- Footer -->
             <footer id="footer">
-                <img src="images/Logos/Header/PNG/PhotonVision-Header-noBG.png" style="width:132px;height:50px;">
+                <img src="images/PhotonVision-Icon-BG.png" style="width:50px;height:50px;">
                 <ul class="copyright">
                     <li>&copy;2024 PhotonVision. All rights reserved.</li>
                 </ul>

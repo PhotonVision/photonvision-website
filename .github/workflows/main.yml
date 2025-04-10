@@ -3,29 +3,40 @@ name: Documentation
 on:
   push:
     # For now, run on all commits to master
-    branches: [ master ]
+    branches: [master]
     # and also all tags starting with v
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
-    build:
-        name: Build
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v4
-        - name: Setup Node
-          uses: actions/setup-node@v4
-        - name: Install packages
-          run: npm ci
-        - name: Build project
-          run: npm run build
-        - name: copy file via ssh password
-          uses: appleboy/scp-action@v0.1.7
-          with:
-            host: ${{ secrets.SSH_HOST }}
-            username: ${{ secrets.SSH_USERNAME }}
-            password: ${{ secrets.SSH_KEY }}
-            port: ${{ secrets.SSH_PORT }}
-            source: "dist/*"
-            target: /var/www/html/photonvision-website/
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+      - name: Install packages
+        run: npm ci
+      - name: Build project
+        run: npm run build
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "dist/*"
+          target: /var/www/html/photonvision-website/
+  format-check:
+    name: Check formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+      - name: Install packages
+        run: npm ci
+      - name: Build project
+        run: npx prettier -c .

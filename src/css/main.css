@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@theme {
+   --color-primary: #006492;
+   --color-brand-yellow: #FFD842;
+   --color-brand-blue: #39A4D6;
+ }
+ 
+ .header-btn {
+   @apply hover:text-brand-yellow text-white flex p-4 transition-colors ;
+ }
+ .features-icon {
+   @apply absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-brand-blue;
+ }
